@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om kyrkorna – TempelKistan</title>
+  <meta name="description" content="Information om Livets Ord och Hillsong Sweden – deras mission, verksamhet och budskap." />
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #0b1220;
+      color: #eaf1ff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 24px 0;
+      color: #cfd8e3;
+    }
+    .btn-nav {
+      background-color: #2b334d;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      margin: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .btn-nav:hover {
+      background-color: #3a4769;
+    }
+    .section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #141d30;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      text-align: left;
+    }
+    .section h2 {
+      color: #cfd8e3;
+      margin-bottom: 12px;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      margin-top: 16px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      border: none;
+    }
+    footer {
+      background-color: #0e1628;
+      color: #ccc;
+      font-size: 0.9rem;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 data-sv="Om kyrkorna & mission" data-en="About the Churches & Mission"></h1>
+    <nav>
+      <a href="give.html" class="btn-nav" data-sv="Gåva" data-en="Donate"></a>
+      <a href="index.html" class="btn-nav" data-sv="Hem" data-en="Home"></a>
+      <a href="info.html" class="btn-nav" data-sv="Om kyrkorna" data-en="About Churches"></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 data-sv="Livets Ord" data-en="Word of Life (Livets Ord)"></h2>
+      <p data-sv="Livets Ord är en profetisk och evangelisk församling med fokus på undervisning, lovsång och mission både i Sverige och internationellt." 
+         data-en="Livets Ord is a prophetic and evangelical church with a focus on teaching, worship, and mission both in Sweden and internationally."></p>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/tDFYLQLv9Bk" 
+                title="Livets Ord – Sunday Service" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 data-sv="Hillsong Sweden" data-en="Hillsong Sweden"></h2>
+      <p data-sv="Hillsong Sweden är en del av den globala Hillsong-rörelsen. De verkar genom lovsång, förkunnelse och mission i Sverige." 
+         data-en="Hillsong Sweden is part of the global Hillsong movement. They operate through worship, preaching, and mission in Sweden."></p>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/B1GSUNhDYt8" 
+                title="Hillsong Sweden – Heart & Soul" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small data-sv="© 2025 TempelKistan – till Hans ära" data-en="© 2025 TempelKistan – to His glory"></small>
+  </footer>
+
+  <script>
+    (function(){
+      const trans = document.querySelectorAll('[data-sv][data-en]');
+      const navBtns = document.querySelectorAll('.btn-nav');
+      function setLang(lang) {
+        const isSV = lang === 'sv';
+        trans.forEach(el => {
+          el.textContent = isSV ? el.getAttribute('data-sv') : el.getAttribute('data-en');
+        });
+        navBtns.forEach(btn => {
+          btn.textContent = isSV ? btn.getAttribute('data-sv') : btn.getAttribute('data-en');
+        });
+        document.documentElement.lang = isSV ? 'sv' : 'en';
+        localStorage.setItem('tk_lang', lang);
+      }
+      // init
+      const saved = localStorage.getItem('tk_lang') || 'sv';
+      setLang(saved);
+      // optional: allow clicking header (if you want to switch)
+    })();
+  </script>
+
+</body>
+</html>
