@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Om kyrkorna – TempelKistan</title>
-  <meta name="description" content="Information om Livets Ord och Hillsong Sweden – deras mission, verksamhet och budskap." />
+  <title>✝️ TempelKistan – Kyrkor & Mission ✡️</title>
+  <meta name="description" content="Information om Livets Ord och Hillsong Church Sweden – deras verksamhet, predikningar och mission. En helig plats för tro, givande och välsignelse." />
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -13,6 +13,15 @@
       margin: 0;
       padding: 0;
       text-align: center;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      padding: 16px 0;
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      letter-spacing: 0.5px;
     }
     h1 {
       font-size: 2rem;
@@ -23,18 +32,17 @@
       background-color: #2b334d;
       color: #fff;
       padding: 12px 20px;
-      border: none;
       border-radius: 8px;
       margin: 8px;
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      transition: background-color 0.2s;
     }
-    .btn-nav:hover {
-      background-color: #3a4769;
-    }
+    .btn-nav:hover { background-color: #3a4769; }
     .section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background: #141d30;
@@ -42,25 +50,42 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.5);
       text-align: left;
     }
-    .section h2 {
-      color: #cfd8e3;
-      margin-bottom: 12px;
-    }
-    .section p {
-      line-height: 1.6;
-    }
+    .section h2 { color: #cfd8e3; margin-bottom: 12px; }
+    .section p { line-height: 1.7; margin-bottom: 14px; }
     .video-wrapper {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
+      padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       margin-top: 16px;
+      border-radius: 12px;
     }
     .video-wrapper iframe {
       position: absolute;
-      top:0; left:0;
-      width:100%; height:100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       border: none;
+      border-radius: 12px;
+    }
+    .btn-link {
+      display: inline-block;
+      background-color: #2b334d;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 14px 26px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      margin: 12px;
+      transition: background-color 0.2s;
+    }
+    .btn-link:hover { background-color: #3a4769; }
+    .bankinfo {
+      background-color: #1c2649;
+      border-radius: 10px;
+      padding: 12px 18px;
+      margin: 16px 0;
+      border: 1px solid rgba(255,255,255,0.1);
     }
     footer {
       background-color: #0e1628;
@@ -73,64 +98,102 @@
 </head>
 <body>
 
-  <header>
-    <h1 data-sv="Om kyrkorna & mission" data-en="About the Churches & Mission"></h1>
-    <nav>
-      <a href="give.html" class="btn-nav" data-sv="Gåva" data-en="Donate"></a>
-      <a href="index.html" class="btn-nav" data-sv="Hem" data-en="Home"></a>
-      <a href="info.html" class="btn-nav" data-sv="Om kyrkorna" data-en="About Churches"></a>
-    </nav>
-  </header>
+  <header>✝️ TempelKistan – Kyrkor & Mission ✡️</header>
+
+  <nav>
+    <a href="give.html" class="btn-nav">💖 Ge en gåva</a>
+    <a href="index.html" class="btn-nav">🏠 Hem</a>
+  </nav>
 
   <main>
+    <!-- LIVETS ORD -->
     <section class="section">
-      <h2 data-sv="Livets Ord" data-en="Word of Life (Livets Ord)"></h2>
-      <p data-sv="Livets Ord är en profetisk och evangelisk församling med fokus på undervisning, lovsång och mission både i Sverige och internationellt." 
-         data-en="Livets Ord is a prophetic and evangelical church with a focus on teaching, worship, and mission both in Sweden and internationally."></p>
+      <h2>🎥 Livets Ord – Predikan med pastor Daniel Steen</h2>
       <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/tDFYLQLv9Bk" 
-                title="Livets Ord – Sunday Service" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        <iframe src="https://www.youtube.com/embed/ByDV_1F-Waw"
+                title="Livets Ord – Predikan Daniel Steen"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+      </div>
+
+      <h2 style="margin-top:40px;">🍞 Nattvarden – Pastor Jan Blom</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/dFvsACnAAwc"
+                title="Nattvarden – Pastor Jan Blom"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a href="https://www.livetsord.se/" class="btn-link" target="_blank">🕊️ Livets Ord</a>
+        <a href="https://www.livetsord.se/en/home/" class="btn-link" target="_blank">📖 Word of Life</a>
       </div>
     </section>
 
     <section class="section">
-      <h2 data-sv="Hillsong Sweden" data-en="Hillsong Sweden"></h2>
-      <p data-sv="Hillsong Sweden är en del av den globala Hillsong-rörelsen. De verkar genom lovsång, förkunnelse och mission i Sverige." 
-         data-en="Hillsong Sweden is part of the global Hillsong movement. They operate through worship, preaching, and mission in Sweden."></p>
+      <h2>📜 Om Livets Ord</h2>
+      <p><strong>Välkommen hit, välkommen hem!</strong> Sedan församlingen Livets Ord såg dagens ljus den 24 maj 1983 har vi drömt, byggt och utvecklat en kyrka som älskar Jesus och människor.</p>
+      <p>Livets Ord är en del av trosrörelsen och är en varm och utåtriktad församling – en plats där människor, unga som gamla, kan känna sig hemma och inkluderade. Hos oss ska den som vill kunna växa både som människa och i sin tro på Jesus.</p>
+      <p>Vår vision och arbete sträcker sig från Uppsala till världen. Vi arbetar för att göra Jesu kärlek tillgänglig för så många som möjligt – genom gudstjänster, mission, bibelskolor, sociala insatser och humanitärt arbete.</p>
+      <p>Det tilltal vi fick från Herren i början, och som fortfarande leder oss, är dessa ord:  
+      <em>“Utrusta Guds folk med hans trosord. Visa dem vilka andliga vapen de har. Lär dem att använda dem och sänd ut dem i segerrik strid för Herren.”</em></p>
+      <p>Ledarskapet består av pastor Christian Åkerhielm, pastor Simon Ahlstrand och pastor Sebastian Asklund.  
+      Under årens lopp har Livets Ord byggt upp över tusen församlingar internationellt, drivit bibelskolor och bedrivit humanitärt arbete i många av världens länder.</p>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a href="https://www.livetsord.se/ge-en-gava/" class="btn-link" target="_blank">💖 Livets Ord – TempelKistan</a>
+        <p style="margin-top:6px; font-size:0.95rem; color:#cfd8e3;">give a gift – ge en gåva</p>
+      </div>
+    </section>
+
+    <!-- HILLSONG CHURCH SWEDEN -->
+    <section class="section">
+      <h2>🎵 Hillsong Church Sweden</h2>
+
+      <div style="text-align:center; margin-bottom:24px;">
+        <a href="https://hillsong.se/" class="btn-link" target="_blank">🎵 Hillsong Church</a>
+      </div>
+
+      <h3>🎥 Något nytt – med pastor Lina Nielsen</h3>
       <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/B1GSUNhDYt8" 
-                title="Hillsong Sweden – Heart & Soul" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        <iframe src="https://www.youtube.com/embed/IbIgwngLAfw"
+                title="Hillsong Church Sweden – Något nytt, pastor Lina Nielsen"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+      </div>
+
+      <h3 style="margin-top:40px;">🎥 Förvaltare åt Gud – med pastor Andreas Nielsen</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/FCh1OazTY0k"
+                title="Hillsong Church Sweden – Förvaltare åt Gud, pastor Andreas Nielsen"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+
+      <h2 style="margin-top:40px;">📜 Om Hillsong Church Sweden</h2>
+      <p>Hillsong Sweden är ett lokalt uttryck för Hillsong Church, engagerade i att skapa ett välkomnande och dynamiskt utrymme för människor att möta Guds kärlek.</p>
+      <p>Vi är en gemenskap som drivs av en passion för Jesus, dedikerade till autentisk tillbedjan och fokuserade på att tjäna vårt lokala samhälle. Vi tror på den lokala kyrkans kraft att transformera liv och ge hopp till Sverige.</p>
+      <p>Vi finns i Stockholm, Göteborg, Malmö, Jönköping och Örebro, och är en del av en global familj av kyrkor. Vi är en kyrka som älskar Gud och älskar människor – en plats där du kan höra hemma, växa och göra skillnad.</p>
+      <p>Vi fokuserar på att bygga en gemenskap där människor kan uppleva Guds närvaro och finna sitt syfte.</p>
+
+      <h3>✝️ Vår tro</h3>
+      <p>Vi tror att Bibeln är Guds Ord – tillförlitlig och tillämpbar i våra liv. Vi tror på en evig Gud i tre Personer: Fadern, Sonen och den Helige Ande. 
+         Vi tror att Jesus Kristus är den enda vägen till försoning och evigt liv, att Han dog och uppstod för vår skull. 
+         Vi tror på dopet, den Helige Andes kraft, de andliga gåvorna och vikten av den lokala kyrkan som gemenskap av troende.</p>
+      <p>Vi tror att Gud har kallat oss att leva heliga och fruktbärande liv, välsignade för att välsigna andra. 
+         Vi tror att Herren Jesus Kristus kommer åter, precis som Han har lovat.</p>
+
+      <div class="bankinfo">
+        <h3>🏦 Bankinformation</h3>
+        <p><strong>Swish online:</strong> 123 – 575 76 38</p>
+        <p><strong>Bankgiro online:</strong> 5839 – 9916</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <small data-sv="© 2025 TempelKistan – till Hans ära" data-en="© 2025 TempelKistan – to His glory"></small>
+    © 2025 TempelKistan – En helig plats för givande, samling och mission.
   </footer>
-
-  <script>
-    (function(){
-      const trans = document.querySelectorAll('[data-sv][data-en]');
-      const navBtns = document.querySelectorAll('.btn-nav');
-      function setLang(lang) {
-        const isSV = lang === 'sv';
-        trans.forEach(el => {
-          el.textContent = isSV ? el.getAttribute('data-sv') : el.getAttribute('data-en');
-        });
-        navBtns.forEach(btn => {
-          btn.textContent = isSV ? btn.getAttribute('data-sv') : btn.getAttribute('data-en');
-        });
-        document.documentElement.lang = isSV ? 'sv' : 'en';
-        localStorage.setItem('tk_lang', lang);
-      }
-      // init
-      const saved = localStorage.getItem('tk_lang') || 'sv';
-      setLang(saved);
-      // optional: allow clicking header (if you want to switch)
-    })();
-  </script>
 
 </body>
 </html>
