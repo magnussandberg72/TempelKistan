@@ -23,24 +23,6 @@
       border-bottom: 1px solid rgba(255,255,255,0.1);
       letter-spacing: 0.6px;
     }
-    h1 {
-      font-size: 2rem;
-      margin: 24px 0;
-      color: #cfd8e3;
-    }
-    .btn-nav {
-      background-color: #2b334d;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      margin: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-      transition: background-color 0.2s;
-    }
-    .btn-nav:hover { background-color: #3a4769; }
     .section {
       max-width: 900px;
       margin: 60px auto;
@@ -73,7 +55,7 @@
       border: none;
       border-radius: 12px;
     }
-    .btn-link {
+    .btn-link, .btn-nav {
       display: inline-block;
       background-color: #2b334d;
       color: #fff;
@@ -85,24 +67,20 @@
       margin: 12px;
       transition: background-color 0.2s;
     }
-    .btn-link:hover { background-color: #3a4769; }
+    .btn-link:hover, .btn-nav:hover { background-color: #3a4769; }
     footer {
       background-color: #0e1628;
       color: #ccc;
       font-size: 0.9rem;
       padding: 20px;
-      margin-top: 60px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
   </style>
 </head>
 <body>
 
   <header>✝️ Temple Chest – Churches ✡️</header>
-
-  <nav>
-    <a href="give.html" class="btn-nav">💖 Så en gåva</a>
-    <a href="index.html" class="btn-nav">🏠 Hem</a>
-  </nav>
 
   <main>
     <!-- LIVETS ORD -->
@@ -183,10 +161,16 @@
          Vi tror att Herren Jesus Kristus kommer åter, precis som Han har lovat.</p>
 
       <div style="text-align:center; margin-top:40px;">
-        <a href="https://hillsong.se/givande/" class="btn-link" target="_blank">Givande</a>
+        <a href="https://hillsong.se/givande/" class="btn-link" target="_blank">🕊️ Givande</a>
       </div>
     </section>
   </main>
+
+  <!-- NAVIGATION flyttad till botten -->
+  <div style="margin: 40px 0;">
+    <a href="index.html" class="btn-nav">🏠 Hem</a>
+    <a href="give.html" class="btn-nav">💖 Så en gåva</a>
+  </div>
 
   <footer>
     © 2025 TempelKistan – En helig plats för givande, samling och mission.
