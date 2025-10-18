@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>✝️ TempleChest – Sow a Gift ✡️</title>
+  <meta name="description" content="TempleChest – A sacred place for giving, gathering, and mission. Support the churches Word of Life and Hillsong Sweden." />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #0b1220;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      padding: 16px 0;
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      color: #cfd8e3;
+      font-size: 1.8rem;
+    }
+    p {
+      color: #eaf1ff;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+    .section {
+      background: #141d30;
+      border-radius: 14px;
+      margin: 30px 0;
+      padding: 24px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+      text-align: left;
+    }
+    .section h2 {
+      color: #cfd8e3;
+      margin-bottom: 10px;
+    }
+    .bankinfo {
+      background-color: #1c2649;
+      border-radius: 10px;
+      padding: 12px 18px;
+      margin: 12px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    strong { color: #cfd8e3; }
+    .btn {
+      display: inline-block;
+      background-color: #2b334d;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 14px 26px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      margin: 12px;
+      transition: background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #3a4769;
+    }
+    footer {
+      color: #bbb;
+      font-size: 0.9rem;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: #0e1628;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>✝️ TempleChest – Sow a Gift ✡️</header>
+
+  <div class="wrap">
+    <h1>💖 Sow a Gift</h1>
+    <p>According to tradition, offerings are gathered here to support the work, mission,  
+       and ministry of the Church — all in gratitude and faith before the Lord.</p>
+
+    <div class="section">
+      <h2>🏦 Word of Life</h2>
+      <div class="bankinfo">
+        <p><strong>Swish:</strong> 900 16 60</p>
+        <p><strong>Vipps:</strong> 542 714</p>
+        <p><strong>Bankgiro:</strong> 900 - 16 60</p>
+      </div>
+      <button class="btn" onclick="copyWordOfLife()">📋 Copy Word of Life info</button>
+    </div>
+
+    <div class="section">
+      <h2>⛪ Hillsong Church Sweden</h2>
+      <div class="bankinfo">
+        <p><strong>Swish online:</strong> 123 - 575 76 38</p>
+        <p><strong>Bankgiro online:</strong> 5839 - 9916</p>
+      </div>
+      <button class="btn" onclick="copyHillsong()">📋 Copy Hillsong info</button>
+    </div>
+
+    <div class="section" style="text-align:center;">
+      <a href="info_en.html" class="btn">⛪ Churches</a>
+      <a href="index_en.html" class="btn">🏠 Home</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 TempleChest – A sacred place for giving, gathering, and mission.
+  </footer>
+
+  <script>
+    function copyWordOfLife() {
+      const info = "WORD OF LIFE\nSwish: 900 16 60\nVipps: 542 714\nBankgiro: 900 - 16 60";
+      navigator.clipboard.writeText(info);
+      alert("📋 Word of Life info copied!");
+    }
+    function copyHillsong() {
+      const info = "HILLSONG CHURCH SWEDEN\nSwish online: 123 - 575 76 38\nBankgiro online: 5839 - 9916";
+      navigator.clipboard.writeText(info);
+      alert("📋 Hillsong info copied!");
+    }
+  </script>
+
+</body>
+</html>
